@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvidha Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="n">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="header-right">
+                <div class="logo">
+                    <img src="image.png" alt="Suvidha Foundation Logo">
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <aside class="sidebar">
+        <button class="dropbtn" onclick="toggleDropdown()">☰</button>
+        <div id="dropdown-content" class="dropdown-content">
+            <a href="#apply-internship">Apply For Internship</a>
+            <a href="#" onclick="navigateToDonate()">Help Now</a>
+            <a href="#events">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#our-donors">Our Donors</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </aside>
+    
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Suvidha Foundation</h1>
+            <p>Empowering communities for a better tomorrow.</p>
+            <a href="#donate" class="cta-button">Donate Now</a>
+        </div>
+    </section>
+    <!-- Additional About Us, Mission, Vision Sections -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <h3>About</h3>
+                <p>Suvidha Mahila Mandal is a non-profit organization working to impart education among the financially challenged sections to help them realize parity in education and strength of little minds in building a promising future. The organization has provisions of student internships, student mentorship and the scope to volunteer. Through these programmes, the organization aims to achieve the vision of imparting innovative education that stays with the students forever and equip them for the unforeseen future.</p>
+            </div>
+            <div class="about-content">
+                <h3>Mission</h3>
+                <p>To inspire students, help them innovate and let them integrate to build the next generation humankind. To run food donation and awareness campaign in rural regions.</p>
+            </div>
+            <div class="about-content">
+                <h3>Vision</h3>
+                <p>To build next-generation entrepreneurs by providing them a skill-based education. To provide internship, training, and workshops and quality education all over the world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2>Empowerment of Women</h2>
+        <div class="team-grid">
+            <img src="about.jpg" alt="Empowerment of Women">
+        </div>
+    </section>
+    <section id="causes">
+        <h2>Causes for a Sustainable Future</h2>
+        <div class="causes-container">
+            <div class="cause">
+                <img src="path-to-your-image1.png" alt="Healthy Food">
+                <h3>Healthy Food</h3>
+                <p>By focusing on healthy food donations, our NGO aims to improve the well-being and quality of life for individuals and communities in need.</p>
+            </div>
+            <div class="cause">
+                <img src="path-to-your-image2.png" alt="Social Awareness">
+                <h3>Social Awareness</h3>
+                <p>We provide resources, conduct awareness campaigns, and facilitate access to hygiene facilities, aiming to create a healthier environment and prevent the spread of diseases.</p>
+            </div>
+            <div class="cause">
+                <img src="path-to-your-image3.png" alt="Tree Plantation">
+                <h3>Tree Plantation</h3>
+                <p>Through community engagement and active participation, we successfully planted thousands of trees, fostering a greener and healthier ecosystem for future generations.</p>
+            </div>
+            <div class="cause">
+                <img src="path-to-your-image4.png" alt="Health Care">
+                <h3>Health Care</h3>
+                <p>We believe that access to healthcare is a fundamental right, and we work tirelessly to ensure that healthcare services are accessible, affordable, and of high quality.</p>
+            </div>
+            <div class="cause">
+                <img src="path-to-your-image5.png" alt="Primary Education">
+                <h3>Primary Education</h3>
+                <p>By collaborating with local communities and educators, we aim to empower children with the knowledge and skills they need for a brighter future.</p>
+            </div>
+            <div class="cause">
+                <img src="path-to-your-image6.png" alt="Social Care">
+                <h3>Social Care</h3>
+                <p>Our programs encompass a range of support services, including counseling, vocational training, and advocacy, with the goal of empowering individuals.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="programs">
+        <h2>Our Programs</h2>
+        <p>We offer a variety of programs aimed at improving lives...</p>
+    </section>
+    <section id="get-involved">
+        <h2>Get Involved</h2>
+        <p>Join us as a volunteer or intern to make a difference...</p>
+    </section>
+    <section id="events">
+        <h2>Events</h2>
+        <p>Stay updated with our latest events...</p>
+        <div id="event-calendar"></div>
+    </section>
+    <!-- <section id="donate">
+        <h2>Donate</h2>
+        <p>Your contribution can help us achieve our goals...</p>
+        <button>Donate Now</button>
+    </section> -->
+    <section id="donate">
+        <h2>Donate</h2>
+        <p>Your contribution can help us achieve our goals...</p>
+        <button class="donate-button" onclick="openModal()">Donate Now</button>
+    </section>
+    
+    <!-- Modal for Help Now Details -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <section id="help-us">
+                <!-- <div class="help-us-banner">
+                    <h2>Help Us</h2>
+                    <p>Home / Help Us</p>
+                </div> -->
+                <div class="account-details">
+                    <h2>ACCOUNT DETAILS</h2>
+                    <div class="account-info">
+                        <div class="donor-info">
+                            <h3>For Indian Donors</h3>
+                            <p>Bank Of Baroda</p>
+                            <p>City: Nagpur</p>
+                            <p>Contact No: +91 8010996763</p>
+                            <p>Account Name: Suvidha Mahila Mandal</p>
+                            <p>Suvidha Account No: 97840100027609</p>
+                            <p>IFSC Code: BARB0DBKPAR</p>
+                        </div>
+                        <div class="qr-code">
+                            <h3>QR Code</h3>
+                            <img src="QR-Codes.jpg" alt="QR Code">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section id="apply-internship">
+        <div class="internship-banner">
+            <div class="overlay">
+                <div class="content">
+                    <h2>Apply For Internship and Mentorship Programs</h2>
+                    <p>Seize the opportunity to gain invaluable experience and jumpstart your career with an internship that propels you towards success.</p>
+                    <p>The Suvidha Foundation Internship Program is a unique opportunity for students and recent graduates to gain experience and contribute to the work of Suvidha Foundation. Along with undertaking tasks related to their specific skills, we encourage interns to develop a reputable professional portfolio.</p>
+                    <a href="https://forms.gle/your-google-form-link" target="_blank" class="apply-button">Apply Here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     
+    <section id="testimonials">
+        <h2>What people are talking about our charity activities</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <img src="rahulyadav.jpg" alt="Rahul Yadav" class="testimonial-image">
+                <div class="testimonial-content">
+                    <!-- Additional content if needed -->
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="riasaigal.jpg" alt="Ria Saigal" class="testimonial-image">
+                <div class="testimonial-content">
+                    <!-- Additional content if needed -->
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="priyankathole.jpg" alt="Priyanka Thole" class="testimonial-image">
+                <div class="testimonial-content">
+                    <!-- Additional content if needed -->
+                </div>
+            </div>
+            <div class="testimonial-card hidden" style="display: none;">
+                <img src="surajkumar.jpg" alt="Suraj Kumar" class="testimonial-image">
+                <div class="testimonial-content">
+                    <!-- Additional content if needed -->
+                </div>
+            </div>
+            <div class="testimonial-card hidden" style="display: none;">
+                <img src="anushmithapaul.jpg" alt="Anushmita Paul" class="testimonial-image">
+                <div class="testimonial-content">
+                    <!-- Additional content if needed -->
+                </div>
+            </div>
+        </div>
+        <button class="view-all-button" onclick="toggleTestimonials()">View All</button>
+    </section>
+    
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="team-card">
+                    <div class="front">
+                        <img src="Shobha_Motghare.jpeg" alt="Shobha Motghare">
+                        <h3>Shobha Motghare</h3>
+                        <p>Secretary</p>
+                    </div>
+                    <div class="back">
+                        <h3>Shobha Motghare</h3>
+                        <p>Secretary</p>
+                        <p>Shobha is dedicated to community service and has been a pivotal part of our organization...</p>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-card">
+                    <div class="front">
+                        <img src="Payal_Badhe.jpg" alt="Payal Badhe">
+                        <h3>Payal Badhe</h3>
+                        <p>President</p>
+                    </div>
+                    <div class="back">
+                        <h3>Payal Badhe</h3>
+                        <p>President</p>
+                        <p>Payal leads our organization with a vision to empower communities and foster growth...</p>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-card">
+                    <div class="front">
+                        <img src="Bharti_Shendre.jpg" alt="Bharti Shendre">
+                        <h3>Bharti Shendre</h3>
+                        <p>Treasurer</p>
+                    </div>
+                    <div class="back">
+                        <h3>Bharti Shendre</h3>
+                        <p>Treasurer</p>
+                        <p>Bharti ensures the financial stability of our organization and oversees all financial activities...</p>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-card">
+                    <div class="front">
+                        <img src="Nilima_Kalambe.jpg" alt="Nilima Kalambe">
+                        <h3>Nilima Kalambe</h3>
+                        <p>Advisor</p>
+                    </div>
+                    <div class="back">
+                        <h3>Nilima Kalambe</h3>
+                        <p>Advisor</p>
+                        <p>Nilima provides strategic advice and ensures that our programs align with our mission...</p>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slide">
+                <div class="testimonial">
+                    <img src="1.jpg" alt="Nilima Kalambe">
+                    <h3>Divina Malfoy</h3>
+                    <p>It was a great experience to work in Suvidha Foundation. Teamwork is very good. They conduct daily meetings to guide us on how to work, which makes our work easier. Overall, it’s an amazing organization to learn from.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="9.jpg" alt="Aheri Ghosh">
+                    <h3>Aheri Ghosh</h3>
+                    <p>I’m glad to have worked with the Suvidha Foundation because I am passionate about their message and what they do.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="5.jpg" alt="Lekhashree H J">
+                    <h3>Lekhashree H J</h3>
+                    <p>It was a great experience working with your NGO. I learned to connect with society and helped the underprivileged section of the society.</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Suvidha Foundation (Suvidha Mahila Mandal)</h3>
+                <p>Office Headquarters -</p>
+                <p><strong>Nagpur Headquarter:</strong> Suvidha Foundation, Walni Ward No. 1, Jai Bhole Nagar, Walni, Saoner Nagpur, Maharashtra 441102</p>
+                <p><strong>Hyderabad Headquarter:</strong> Vazhra Nirman Pushpak,
+                    Vazhra Nirman Pushpak, C Block 701, 500090, Hyderabad</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Certificates</h3>
+                    <ul>
+                        <li><a href="#">80G Certificate</a></li>
+                        <li><a href="#">12A Certificate</a></li>
+                        <li><a href="#">CSR Certificate</a></li>
+                        <li><a href="#">Suvidha Darpan Registration</a></li>
+                        <li><a href="#">Suvidha Pan Card</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Verify Your Certificate</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2024 Suvidha Foundation (Suvidha Mahila Mandal), All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
